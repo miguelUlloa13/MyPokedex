@@ -8,22 +8,28 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    // MARK: - Outlets
+    @IBOutlet weak var helloLbl: UILabel!
 
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        customLabels()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: - Methods
+    func customLabels() {
+        AppFont(label: helloLbl, text: "Hello, world!").applyChanges(size: 15)
     }
-    */
 
 }

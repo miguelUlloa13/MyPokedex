@@ -15,6 +15,9 @@
 		78098AA62A882BEA00CF0EF9 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78098AA42A882BEA00CF0EF9 /* HomeViewController.xib */; };
 		78098AAB2A882FC100CF0EF9 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78098AAA2A882FC100CF0EF9 /* MainCoordinator.swift */; };
 		78098AB12A88328D00CF0EF9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78098AB02A88328D00CF0EF9 /* Coordinator.swift */; };
+		78098AB52A88352100CF0EF9 /* PokemonGB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78098AB42A88352100CF0EF9 /* PokemonGB.ttf */; };
+		78098AB82A88367C00CF0EF9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78098AB72A88367C00CF0EF9 /* Extensions.swift */; };
+		78098ABA2A883E5300CF0EF9 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78098AB92A883E5300CF0EF9 /* AppFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		78098AA42A882BEA00CF0EF9 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		78098AAA2A882FC100CF0EF9 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		78098AB02A88328D00CF0EF9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		78098AB42A88352100CF0EF9 /* PokemonGB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonGB.ttf; sourceTree = "<group>"; };
+		78098AB72A88367C00CF0EF9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		78098AB92A883E5300CF0EF9 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,8 @@
 		78098A8E2A86B91400CF0EF9 /* MyPokedex */ = {
 			isa = PBXGroup;
 			children = (
+				78098AB62A88366E00CF0EF9 /* Utils */,
+				78098AB22A8834D400CF0EF9 /* Resources */,
 				78098A9D2A86B91500CF0EF9 /* Info.plist */,
 				78098A8F2A86B91400CF0EF9 /* AppDelegate.swift */,
 				78098A912A86B91400CF0EF9 /* SceneDelegate.swift */,
@@ -111,6 +119,31 @@
 				78098AA32A882BEA00CF0EF9 /* HomeViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		78098AB22A8834D400CF0EF9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				78098AB32A8834E300CF0EF9 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		78098AB32A8834E300CF0EF9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				78098AB42A88352100CF0EF9 /* PokemonGB.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		78098AB62A88366E00CF0EF9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				78098AB72A88367C00CF0EF9 /* Extensions.swift */,
+				78098AB92A883E5300CF0EF9 /* AppFont.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +207,7 @@
 				78098A9C2A86B91500CF0EF9 /* LaunchScreen.storyboard in Resources */,
 				78098A992A86B91500CF0EF9 /* Assets.xcassets in Resources */,
 				78098AA62A882BEA00CF0EF9 /* HomeViewController.xib in Resources */,
+				78098AB52A88352100CF0EF9 /* PokemonGB.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				78098A902A86B91400CF0EF9 /* AppDelegate.swift in Sources */,
+				78098AB82A88367C00CF0EF9 /* Extensions.swift in Sources */,
+				78098ABA2A883E5300CF0EF9 /* AppFont.swift in Sources */,
 				78098A922A86B91400CF0EF9 /* SceneDelegate.swift in Sources */,
 				78098AB12A88328D00CF0EF9 /* Coordinator.swift in Sources */,
 				78098AAB2A882FC100CF0EF9 /* MainCoordinator.swift in Sources */,
