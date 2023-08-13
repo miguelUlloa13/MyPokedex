@@ -17,6 +17,9 @@ final class HomeViewController: UIViewController {
     
     @IBOutlet weak var PokemonImg: UIImageView!
     
+    @IBOutlet weak var HomeStackView: UIStackView!
+    
+    
     // MARK: - Properties
     private let apiClient = APIClient()
     private let pokemonSelected = PokemonSelectedApi()
@@ -41,23 +44,26 @@ final class HomeViewController: UIViewController {
         customButtons()
         playTimer()
         
+        self.title = "MyPokedex"
+        HomeStackView.layer.cornerRadius = 20
+        HomeStackView.clipsToBounds = true
     }
     
     // MARK: - Methods
     
     /// Customizes the labels
     private func customLabels() {
-        AppFont(label: PokemonNameLbl, text: "Hello, world!").applyChanges(size: 15)
+        AppFont(label: PokemonNameLbl, text: "¡BIENVENIDO!").applyChanges(size: 23)
         
-        AppFont(label: TimerLbl, text: "30").applyChanges(size: 30)
+        AppFont(label: TimerLbl, text: "30").applyChanges(size: 30, textColor: .white)
         TimerLbl.layer.cornerRadius = 10
         TimerLbl.clipsToBounds = true
-        TimerLbl.backgroundColor = .yellow.withAlphaComponent(0.7)
+        TimerLbl.backgroundColor = .blue.withAlphaComponent(0.7)
     }
     
     /// Customizes the Buttons
     private func customButtons() {
-        showPokemonBtn.backgroundColor = .link
+        showPokemonBtn.backgroundColor = .red
         showPokemonBtn.setTitle("Mostrar Pokemon", for: .normal)
         showPokemonBtn.setTitleColor(.white, for: .normal)
         showPokemonBtn.titleLabel?.font = .PokemonGB(size: 15)
@@ -70,6 +76,7 @@ final class HomeViewController: UIViewController {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = .red
+        appearance.titleTextAttributes = [NSAttributedString.Key.font: UIFont.PokemonGB(size: 17)!]
         
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.scrollEdgeAppearance = navigationController?.navigationBar.standardAppearance
@@ -84,7 +91,7 @@ final class HomeViewController: UIViewController {
             switch result {
             case .success(let model):
                 let myPokemon = model.pokemons.randomElement()
-                self.PokemonNameLbl.text = myPokemon?.name
+                self.PokemonNameLbl.text = myPokemon?.name?.uppercased()
                 myImageUrl = myPokemon?.url
                 
             case .failure(let error):

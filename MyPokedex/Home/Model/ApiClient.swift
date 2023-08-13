@@ -57,7 +57,7 @@ final class APIClient {
     func getPokemons() async -> Result<PokemonResponseDataModel, NetworkError> {
         
         // Validate Url
-        guard let apiUrl = URL(string: "https://pokeapi.co/api/v2/pokemon/?limit=60&offset=151") else {
+        guard let apiUrl = URL(string: "https://pokeapi.co/api/v2/pokemon/?limit=100&offset=1") else {
             return .failure(.invalidURL)
         }
         

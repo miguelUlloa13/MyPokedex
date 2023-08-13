@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="MyPokedex" customModuleProvider="target">
             <connections>
+                <outlet property="HomeStackView" destination="XGk-Uj-ViP" id="mbh-2A-ChZ"/>
                 <outlet property="PokemonImg" destination="irP-B3-Az0" id="gmT-Ll-8ln"/>
                 <outlet property="PokemonNameLbl" destination="Cql-5e-JeG" id="0Qq-LQ-0nJ"/>
                 <outlet property="TimerLbl" destination="5uS-kT-5cI" id="K5L-wZ-pn1"/>
@@ -34,51 +35,19 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iuH-dY-peC">
                                     <rect key="frame" x="0.0" y="331.66666666666674" width="369" height="331.33333333333326"/>
                                     <subviews>
-                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ua9-BH-njI">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cql-5e-JeG">
                                             <rect key="frame" x="0.0" y="0.0" width="369" height="331.33333333333331"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cc0-Zn-zpK">
-                                                    <rect key="frame" x="0.0" y="0.0" width="369" height="30"/>
-                                                    <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lgy-zd-4WP">
-                                                            <rect key="frame" x="0.0" y="0.0" width="369" height="30"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cql-5e-JeG">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="369" height="30"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="30" id="CUL-gg-vco"/>
-                                                                    </constraints>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                        </stackView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="lgy-zd-4WP" secondAttribute="trailing" id="PBj-UH-hx3"/>
-                                                        <constraint firstItem="lgy-zd-4WP" firstAttribute="leading" secondItem="cc0-Zn-zpK" secondAttribute="leading" id="WPF-AX-mIK"/>
-                                                        <constraint firstAttribute="bottom" secondItem="lgy-zd-4WP" secondAttribute="bottom" id="nBn-du-5sq"/>
-                                                        <constraint firstItem="lgy-zd-4WP" firstAttribute="top" secondItem="cc0-Zn-zpK" secondAttribute="top" id="zXr-Dc-Mxw"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="cc0-Zn-zpK" secondAttribute="trailing" id="37G-Iv-KIn"/>
-                                                <constraint firstItem="cc0-Zn-zpK" firstAttribute="centerX" secondItem="ua9-BH-njI" secondAttribute="centerX" id="5sg-eS-B96"/>
-                                                <constraint firstItem="cc0-Zn-zpK" firstAttribute="leading" secondItem="ua9-BH-njI" secondAttribute="leading" id="7UO-qg-EtK"/>
-                                                <constraint firstAttribute="bottom" secondItem="cc0-Zn-zpK" secondAttribute="bottom" id="TlT-t2-eF9"/>
-                                                <constraint firstItem="cc0-Zn-zpK" firstAttribute="top" secondItem="ua9-BH-njI" secondAttribute="top" id="uM0-kU-aXC"/>
-                                            </constraints>
-                                        </scrollView>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="backgroundColor" red="0.85410718548999265" green="0.97331217835520467" blue="0.99325615167617798" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="ua9-BH-njI" secondAttribute="trailing" id="ROO-oF-58r"/>
-                                        <constraint firstItem="ua9-BH-njI" firstAttribute="leading" secondItem="iuH-dY-peC" secondAttribute="leading" id="S59-6t-jTS"/>
-                                        <constraint firstItem="ua9-BH-njI" firstAttribute="top" secondItem="iuH-dY-peC" secondAttribute="top" id="cx5-u4-ATG"/>
-                                        <constraint firstAttribute="bottom" secondItem="ua9-BH-njI" secondAttribute="bottom" id="gsp-Ab-lAj"/>
+                                        <constraint firstAttribute="bottom" secondItem="Cql-5e-JeG" secondAttribute="bottom" id="6uX-Sr-hYy"/>
+                                        <constraint firstAttribute="trailing" secondItem="Cql-5e-JeG" secondAttribute="trailing" id="GDM-w2-Smf"/>
+                                        <constraint firstItem="Cql-5e-JeG" firstAttribute="top" secondItem="iuH-dY-peC" secondAttribute="top" id="g9C-z1-3zU"/>
+                                        <constraint firstItem="Cql-5e-JeG" firstAttribute="leading" secondItem="iuH-dY-peC" secondAttribute="leading" id="tgC-uI-Bi6"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -136,9 +105,6 @@
     </objects>
     <resources>
         <image name="defaultImg" width="1191" height="1254"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
