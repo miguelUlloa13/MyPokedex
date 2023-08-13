@@ -11,7 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="MyPokedex" customModuleProvider="target">
             <connections>
                 <outlet property="PokemonImg" destination="irP-B3-Az0" id="gmT-Ll-8ln"/>
-                <outlet property="helloLbl" destination="Cql-5e-JeG" id="0Qq-LQ-0nJ"/>
+                <outlet property="PokemonNameLbl" destination="Cql-5e-JeG" id="0Qq-LQ-0nJ"/>
+                <outlet property="TimerLbl" destination="5uS-kT-5cI" id="K5L-wZ-pn1"/>
                 <outlet property="showPokemonBtn" destination="lFv-Lf-3Co" id="Ia3-ji-ZJM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -86,18 +87,35 @@
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFv-Lf-3Co">
                             <rect key="frame" x="46.666666666666657" y="687" width="300" height="60"/>
+                            <color key="backgroundColor" systemColor="systemGreenColor"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="300" id="DJb-9W-PSh"/>
                                 <constraint firstAttribute="height" constant="60" id="xSU-nT-rWi"/>
                             </constraints>
                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                             <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="showPokemonBtnTapped:" destination="-1" eventType="touchUpInside" id="mMB-Cx-JLp"/>
+                            </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hola" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5uS-kT-5cI">
+                            <rect key="frame" x="5" y="5" width="100" height="100"/>
+                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="76b-MI-veC"/>
+                                <constraint firstAttribute="height" constant="100" id="k7g-oC-14a"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="5uS-kT-5cI" firstAttribute="leading" secondItem="3W2-p7-PpG" secondAttribute="leading" constant="5" id="8Yq-Xp-zia"/>
                         <constraint firstItem="lFv-Lf-3Co" firstAttribute="top" secondItem="XGk-Uj-ViP" secondAttribute="bottom" constant="12" id="J4F-dy-03S"/>
                         <constraint firstItem="XGk-Uj-ViP" firstAttribute="leading" secondItem="3W2-p7-PpG" secondAttribute="leading" constant="12" id="QcI-8Z-TWk"/>
+                        <constraint firstItem="5uS-kT-5cI" firstAttribute="top" secondItem="3W2-p7-PpG" secondAttribute="top" constant="5" id="WsS-es-dxu"/>
                         <constraint firstAttribute="trailing" secondItem="XGk-Uj-ViP" secondAttribute="trailing" constant="12" id="Yga-Yl-iMT"/>
                         <constraint firstItem="lFv-Lf-3Co" firstAttribute="centerX" secondItem="XGk-Uj-ViP" secondAttribute="centerX" id="YsA-WW-Q3S"/>
                         <constraint firstItem="XGk-Uj-ViP" firstAttribute="top" secondItem="3W2-p7-PpG" secondAttribute="top" constant="12" id="g6f-ew-73C"/>
@@ -123,6 +141,12 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

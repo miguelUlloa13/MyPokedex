@@ -18,6 +18,10 @@
 		78098AB52A88352100CF0EF9 /* PokemonGB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78098AB42A88352100CF0EF9 /* PokemonGB.ttf */; };
 		78098AB82A88367C00CF0EF9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78098AB72A88367C00CF0EF9 /* Extensions.swift */; };
 		78098ABA2A883E5300CF0EF9 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78098AB92A883E5300CF0EF9 /* AppFont.swift */; };
+		78E5CACC2A88BF3F005C4095 /* PokemonDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E5CACB2A88BF3F005C4095 /* PokemonDataModel.swift */; };
+		78E5CACE2A88BF81005C4095 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E5CACD2A88BF81005C4095 /* ApiClient.swift */; };
+		78E5CAD02A88C01E005C4095 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E5CACF2A88C01E005C4095 /* NetworkError.swift */; };
+		78E5CAD22A892571005C4095 /* PokemonSelectedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E5CAD12A892571005C4095 /* PokemonSelectedModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		78098AB42A88352100CF0EF9 /* PokemonGB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonGB.ttf; sourceTree = "<group>"; };
 		78098AB72A88367C00CF0EF9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		78098AB92A883E5300CF0EF9 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		78E5CACB2A88BF3F005C4095 /* PokemonDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDataModel.swift; sourceTree = "<group>"; };
+		78E5CACD2A88BF81005C4095 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		78E5CACF2A88C01E005C4095 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		78E5CAD12A892571005C4095 /* PokemonSelectedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonSelectedModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,15 +74,15 @@
 		78098A8E2A86B91400CF0EF9 /* MyPokedex */ = {
 			isa = PBXGroup;
 			children = (
-				78098AB62A88366E00CF0EF9 /* Utils */,
-				78098AB22A8834D400CF0EF9 /* Resources */,
 				78098A9D2A86B91500CF0EF9 /* Info.plist */,
 				78098A8F2A86B91400CF0EF9 /* AppDelegate.swift */,
 				78098A912A86B91400CF0EF9 /* SceneDelegate.swift */,
+				78098A9A2A86B91500CF0EF9 /* LaunchScreen.storyboard */,
+				78098A982A86B91500CF0EF9 /* Assets.xcassets */,
+				78098AB62A88366E00CF0EF9 /* Utils */,
+				78098AB22A8834D400CF0EF9 /* Resources */,
 				78098AA72A882F7B00CF0EF9 /* Coordinator */,
 				78098AAC2A882FEF00CF0EF9 /* Home */,
-				78098A982A86B91500CF0EF9 /* Assets.xcassets */,
-				78098A9A2A86B91500CF0EF9 /* LaunchScreen.storyboard */,
 			);
 			path = MyPokedex;
 			sourceTree = "<group>";
@@ -101,6 +109,10 @@
 		78098AAD2A88300900CF0EF9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				78E5CACB2A88BF3F005C4095 /* PokemonDataModel.swift */,
+				78E5CAD12A892571005C4095 /* PokemonSelectedModel.swift */,
+				78E5CACD2A88BF81005C4095 /* ApiClient.swift */,
+				78E5CACF2A88C01E005C4095 /* NetworkError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -220,11 +232,15 @@
 			files = (
 				78098A902A86B91400CF0EF9 /* AppDelegate.swift in Sources */,
 				78098AB82A88367C00CF0EF9 /* Extensions.swift in Sources */,
+				78E5CACE2A88BF81005C4095 /* ApiClient.swift in Sources */,
 				78098ABA2A883E5300CF0EF9 /* AppFont.swift in Sources */,
 				78098A922A86B91400CF0EF9 /* SceneDelegate.swift in Sources */,
 				78098AB12A88328D00CF0EF9 /* Coordinator.swift in Sources */,
+				78E5CACC2A88BF3F005C4095 /* PokemonDataModel.swift in Sources */,
+				78E5CAD22A892571005C4095 /* PokemonSelectedModel.swift in Sources */,
 				78098AAB2A882FC100CF0EF9 /* MainCoordinator.swift in Sources */,
 				78098AA52A882BEA00CF0EF9 /* HomeViewController.swift in Sources */,
+				78E5CAD02A88C01E005C4095 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
