@@ -20,7 +20,6 @@ class AppFont {
     }
 
     // MARK: - Methods
-     
     func applyChanges(size: CGFloat = 17, textColor: UIColor = .black, textAlignment: NSTextAlignment = .center) {
         label.text = text
         label.font = .PokemonGB(size: size)
